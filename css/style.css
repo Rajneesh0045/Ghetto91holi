@@ -1,0 +1,176 @@
+::-webkit-scrollbar{display:none}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section{
+  width: 100%;
+  height: 100vmin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#section1{
+  background: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: 0 0;
+}
+
+#section2{
+  background: url(../images/LalitAshokNightView.jpg);
+  position: relative;
+  height: 600px;
+  background-position: center center;
+}
+
+#section3{
+  background: url(../images/SutraReloaded.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#section4{
+  background: url(../images/holi-colors.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#section5{
+  background: url(../images/pool.jpg);
+  position: relative;
+  height: 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#section7{
+  background: url(../images/para-back.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  position: relative;
+}
+#section8{
+  background: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+#section1 img{
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+#section2 .infoline{
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  padding: 30px 0;
+}
+
+#section4 .infoline{
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+}
+
+#section5 p{
+  background: rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 10px 20px;
+
+}
+.artists{
+  height: 400px;
+  background: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.a1 .thumb{
+  background: url(../images/artist1.jpg);
+}
+.a2 .thumb{
+  background: url(../images/artist2.jpg);
+}
+.a3 .thumb{
+  background: url(../images/artist3.jpg);
+}
+.a4 .thumb{
+  background: url(../images/artist4.jpg);
+}
+
+.artist .thumb{
+  width:200px;
+  height: 200px;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+}
+
+#section7 img{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 200px;
+  border-radius: 2px;
+}
+
+#googleMap{
+  width: 50%;
+  height: 50%;
+}

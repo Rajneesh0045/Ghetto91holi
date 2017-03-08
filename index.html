@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Ghetto91Holi</title>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="none" onload="if(media!='all')media='all'" />
+  </head>
+  <body>
+    <div class="container">
+    <section class="section" id="section1">
+      <img src="images/ghetto.png" alt="Ghetto" />
+    </section>
+
+    <section class="section" id="section2">
+      <div class="infoline">Holi 2017 at the LAlit Ashok Bangalore</div>
+    </section>
+
+    <section class="section" id="section3"></section>
+
+    <section class="section" id="section4">
+      <div class="infoline">
+        <p>
+          Rain Dance . Live Dhol . Free Thandai . Unlimited Organic Colors . Festival Setup
+        </p>
+        <p>
+          Free Zip Locks . Shower . Changing Rooms . Special Rates on foods and Beverage
+        </p>
+      </div>
+    </section>
+    <section class="section" id="section5">
+      <p>
+        Holi at Lalit Lawns only at 499 INR/-
+      </p>
+    </section>
+    <section class="section artists" id="section6">
+      <div class="artist a3"><div class="thumb"></div><p>DJ Prithvi</p></div>
+      <div class="artist a2"><div class="thumb"></div><p>DJ Kave</p></div>
+      <div class="artist a1"><div class="thumb"></div><p>DJ Shirin</p></div>
+      <div class="artist a4"><div class="thumb"></div><p>DJ Harsh</p></div>
+    </section>
+
+    <section class="section" id="section7">
+      <img src="images/side-img.jpg" alt="Enjoy" />
+    </section>
+    <section class="section" id="section8">
+      <div id="googleMap"></div>
+      <p></p>
+    </section>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+    $(window).scroll(function(){
+
+    var wScroll = $(this).scrollTop();
+    console.log('yo')
+      $('#section1').css({
+        'background-position' : '0px '+ wScroll/2 +'px'
+      });
+    })
+    </script>
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </body>
+</html>
