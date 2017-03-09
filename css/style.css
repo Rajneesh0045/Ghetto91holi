@@ -85,12 +85,15 @@ body{
 
 
 
-#section1 img{
+#section1 .ghetto-logo{
   width: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+#section1 .ghetto-logo img{
+  width: 300px;
 }
 #section2 .infoline{
   width: 100%;
@@ -98,7 +101,7 @@ body{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 25px;
-  line-height: 2;
+  line-height: 1.5;
   color: #fff;
   text-align: center;
   position: absolute;
@@ -231,7 +234,7 @@ footer .social img{
     height: 100vmin;
   }
   #section2 .infoline{
-    font-size: 50px;
+    font-size: 40px;
   }
   #section4 .infoline{
     font-size: 25px;
@@ -250,4 +253,36 @@ footer .social img{
     width: 35%;
     font-size: 20px;
   }
+}
+
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 120deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -50deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 30deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation: flipInX 1s forwards;
 }
