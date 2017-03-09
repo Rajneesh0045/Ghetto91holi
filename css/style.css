@@ -54,7 +54,6 @@
   background-size: cover;
   color: white;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -146,7 +145,7 @@
 #section7 img{
   position: absolute;
   top:50%;
-  left: 0;
+  left: 5%;
   width: 200px;
   transform: translate(0,-50%);
   border-radius: 3px;
@@ -156,9 +155,6 @@
   width: 90%;
   height: 70%;
   border-radius: 3px;
-}
-#section8 p img{
-  width: 30px;
 }
 .foot{
   background: url(../images/background.jpg);
