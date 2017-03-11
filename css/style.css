@@ -48,14 +48,17 @@
   position: relative;
 }
 #section8{
+  height: 800px;
+  padding: 10px 0;
   background: url(../images/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 
@@ -150,11 +153,29 @@
   transform: translate(0,-50%);
   border-radius: 3px;
 }
-
-#section8 iframe{
+#section8 .map{
+  height: 40%;
   width: 90%;
-  height: 70%;
+}
+#section8 .booking{
+  height: 55%;
+  width: 90%;
+  text-align: center;
+}
+#section8 .map iframe{
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
+}
+
+#section8 .booking iframe{
+  width: 100%;
+  height: 85%;
+  border-radius: 3px;
+}
+#book{
+  font-size: 20px;
+  font-weight: bold;
 }
 .foot{
   background: url(../images/background.jpg);
@@ -215,14 +236,20 @@ footer .social img{
   }
 
   #section8{
+    height: 100vmin;
     flex-direction: row;
   }
-  #section8 iframe{
+  #section8 .map{
+    height: 80%;
     width: 60%;
   }
-  #section8 p{
+  #section8 .booking{
     width: 35%;
+    height: 80%;
     font-size: 20px;
+  }
+  #book{
+    font-size: 25px;
   }
 }
 
